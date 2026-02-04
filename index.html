@@ -211,7 +211,8 @@
             params.append('phone', form.phone.value);
             params.append('date', new Date().toLocaleString('ko-KR'));
             params.append('lang', currentLang);
-
+            params.append('site', 'pps3');
+            
             try {
                 await fetch(scriptURL, { 
                     method: 'POST', 
@@ -296,4 +297,5 @@
         };
     </script>
 </body>
+
 </html>
